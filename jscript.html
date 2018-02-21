@@ -1,0 +1,38 @@
+<html>
+<script>
+f
+function mf()
+{
+ document.body.style.backgroundImage = "path('C:\Users\Vinmalar\Downloads')";
+ var w=document.details.firstname.value;
+ document.getElementById('dfname').innerHTML=w;
+ document.getElementById('fname').style.display='none';
+ var x=document.details.lastname.value;
+ document.getElementById('dlname').innerHTML=x;
+ document.getElementById('lname').style.display='none';
+ var y=document.details.age.value;
+ document.getElementById('dage').innerHTML=y;
+ document.getElementById('lang').style.display='none';
+var z=document.details.ta.value;
+ document.getElementById('dtext').innerHTML=z;
+ document.getElementById('tx').style.display='none';
+ }
+</script>
+<form name=details>
+firstname:<br>
+<input type="text" name="firstname" id="fname"><br>
+<p id="dfname"></p>
+lastname:<br>
+<input type="text" name="lastname" id="lname"><br>
+<p id="dlname"></p>
+Age:<br>
+<input type="number" name="age" id="lang"><br>
+<p id="dage"></p>
+
+Comment:<br>
+<textarea type="text" row="6" cols="40" name="ta" id="tx"></textarea>
+<p id="dtext"></p><br>
+<center><button type="button" onclick="mf()">showme</button></center>
+</form>
+</body>
+</html>
